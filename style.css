@@ -1,0 +1,43 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#quote {
+    left: -100%;
+    opacity: 0;
+    transition: left 2s, opacity 3s;
+    position: relative;
+    overflow: hidden;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#quote.show {
+    left: 0;
+    opacity: 1;
+}
+
+#quote-holder {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#quote-holder.show {
+    opacity: 1;
+}
+
+#quoted {
+    right: 100%;
+    opacity: 0;
+    transition: right 3s, opacity 3s;
+    position: relative;
+    text-align: right;
+}
+
+#quoted.show {
+    right: 0;
+    opacity: 1;
+}
